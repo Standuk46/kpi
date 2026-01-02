@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibHub — онлайн бібліотека</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <nav class="nav">
+                <div>
+                    <a class="logo" href="index.html">LIBHUB</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="div-a" href="stores.html">Каталог</a></li>
+                    <li><a class="div-a" href="delivery.html">Читачам</a></li>
+                    <li><a class="div-a" href="returns.html">Правила користування</a></li>
+                    <li><a class="div-a" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-bottom">
+                <!-- БУРГЕР-МЕНЮ КАТАЛОГУ -->
+                <div class="catalog-wrapper">
+                    <button class="catalog-btn" id="catalogToggle">Каталог книг</button>
+                    <div class="catalog-dropdown" id="catalogDropdown">
+                        <ul class="catalog-list">
+                            <li class="catalog-item">
+                                <a href="fiction.html" class="catalog-link">
+                                    <i class="fas fa-book-open"></i>
+                                    <span>Художня література</span>
+                                </a>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="poetry.html" class="catalog-link">
+                                    <i class="fas fa-feather"></i>
+                                    <span>Поезія</span>
+                                </a>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="science-education.html" class="catalog-link">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Наука та освіта</span>
+                                </a>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="psychology.html" class="catalog-link">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Психологія та саморозвиток</span>
+                                </a>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="children.html" class="catalog-link">
+                                    <i class="fas fa-child"></i>
+                                    <span>Дитяча література</span>
+                                </a>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="audio.html" class="catalog-link">
+                                    <i class="fas fa-headphones"></i>
+                                    <span>Аудіокниги та подкасти</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <input class="search-bar" type="text" placeholder="Пошук книги, автора, жанру...">
+
+                <ul class="user-menu">
+                    <li><a class="lastdiv-a" href="#"><i class="fas fa-heart"></i><span>Обране</span></a></li>
+                    <li><a class="lastdiv-a" href="#"><i class="fas fa-book"></i><span>Список читання</span></a></li>
+                    <li><a class="lastdiv-a" href="singInForm.html"><i class="fas fa-user"></i><span>Кабінет</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <div class="content-container">
+                <div class="carousel-section">
+                    <div class="carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="img/libhub.png" alt="Нові книжкові релізи LibHub">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/second.png" alt="Рекомендації від бібліотекарів">
+                            </div>
+                        </div>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="products">
+            <h2 class="section-title"><i class="fas fa-book-open"></i> Популярні романи</h2>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/iph16.png" alt="Обкладинка роману «Місто, що прокидається»">
+                    <h3>«Місто, що прокидається»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/smartphone2.png" alt="Обкладинка роману «Дім серед туману»">
+                    <h3>«Дім серед туману»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/smartphone3.png" alt="Обкладинка роману «Коли стихає вітер»">
+                    <h3>«Коли стихає вітер»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/smartphone4.png" alt="Обкладинка роману «Листи з майбутнього»">
+                    <h3>«Листи з майбутнього»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/smartphone5.png" alt="Обкладинка роману «Там, де починається небо»">
+                    <h3>«Там, де починається небо»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+
+                <div class="product-card"> 
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/smartphone6.png" alt="Обкладинка роману «Нічні вогні міста»">
+                    <h3>«Нічні вогні міста»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/smartphone7.png" alt="Обкладинка роману «Остання зірка над морем»">
+                    <h3>«Остання зірка над морем»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <br>
+        <section class="products">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Освітня та нон-фікшн література</h2>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/laptop1.png" alt="Обкладинка книги «Основи програмування»">
+                    <h3>«Основи програмування»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/laptop2.png" alt="Обкладинка книги «Проєктний менеджмент на практиці»">
+                    <h3>«Проєктний менеджмент на практиці»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/laptop3.png" alt="Обкладинка книги «Історія світу в 100 подіях»">
+                    <h3>«Історія світу в 100 подіях»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/laptop4.png" alt="Обкладинка книги «Мистецтво концентрації»">
+                    <h3>«Мистецтво концентрації»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/laptop5.png" alt="Обкладинка книги «Фінансова грамотність для всіх»">
+                    <h3>«Фінансова грамотність для всіх»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/laptop6.png" alt="Обкладинка книги «Алгоритми простою мовою»">
+                    <h3>«Алгоритми простою мовою»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/laptop7.png" alt="Обкладинка книги «Креативне мислення»">
+                    <h3>«Креативне мислення»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <br>
+        <section class="products">
+            <h2 class="section-title"><i class="fas fa-headphones"></i> Аудіокниги та подкасти</h2>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/headphones1.png" alt="Аудіокнига «Голоси міста»">
+                    <h3>Аудіокнига «Голоси міста»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/headphones2.png" alt="Podacst «Наука без меж»">
+                    <h3>Подкаст «Наука без меж»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/headphones3.png" alt="Аудіокнига «Короткі історії перед сном»">
+                    <h3>Аудіокнига «Короткі історії перед сном»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/headphones4.png" alt="Подкаст «Історії, що надихають»">
+                    <h3>Подкаст «Історії, що надихають»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/headphones5.png" alt="Аудіокнига «Шлях до себе»">
+                    <h3>Аудіокнига «Шлях до себе»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/headphones6.png" alt="Подкаст «Літературні діалоги»">
+                    <h3>Подкаст «Літературні діалоги»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+                <div class="product-card">
+                    <div class="card-icons"><i class="fas fa-heart"></i></div>
+                    <img src="img/headphones7.png" alt="Аудіокнига «Класика у форматі аудіо»">
+                    <h3>Аудіокнига «Класика у форматі аудіо»</h3>
+                    <div class="button-group">
+                        <button class="review-btn"><i class="fas fa-comment"></i> Залишити відгук</button>
+                        <button class="info-btn"><i class="fas fa-info-circle"></i> Детальніше</button>
+                    </div>
+                    <button class="buy-btn">Додати до списку читання</button>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- ПЕРЕВАГИ LIBHUB -->
+        <section class="advantages">
+            <h2>Чому читачі обирають LibHub</h2>
+            <div class="advantages-grid">
+                <div class="adv-item">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Зручний доступ до книг</h3>
+                    <p>Читати можна з комп'ютера, планшета чи смартфона у будь-який час.</p>
+                </div>
+                <div class="adv-item">
+                    <i class="fa-layer-group"></i>
+                    <h3>Тисячі видань в одному місці</h3>
+                    <p>Художня література, нон-фікшн, наука, дитячі книги та аудіокниги.</p>
+                </div>
+                <div class="adv-item">
+                    <i class="fas fa-comments"></i>
+                    <h3>Підтримка та рекомендації</h3>
+                    <p>Ми допоможемо обрати книги під ваші інтереси та настрій.</p>
+                </div>
+                <div class="adv-item">
+                    <i class="fas fa-file-lines"></i>
+                    <h3>Різні формати</h3>
+                    <p>Електронні книги, аудіокниги та друковані видання у партнерських бібліотеках.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРО БІБЛІОТЕКУ -->
+        <section class="about">
+            <div class="about-box">
+                <h2>Онлайн-бібліотека <strong>LibHub</strong>: ваш простір для читання, навчання та натхнення</h2>
+
+                <p><strong>LibHub</strong> — це сучасна онлайн-бібліотека, що поєднує електронні книги, аудіокниги та інформацію про друковані видання. Ми створені для тих, хто цінує знання, історії та зручний доступ до літератури з будь-якого куточка світу.</p>
+
+                <p>У каталозі <strong>LibHub</strong> ви знайдете художню літературу, нон-фікшн, навчальні посібники, дитячі книги, комікси, наукові праці та багато іншого. Замість традиційних полиць — зручний онлайн-каталог із пошуком за автором, жанром, темою чи серією.</p>
+
+                <p>Ми постійно оновлюємо колекцію, додаємо нові релізи, а також формуємо добірки за інтересами: від класики до сучасних бестселерів. Команда бібліотекарів та редакторів дбає про те, щоб ви могли легко знайти саме ту книгу, яка вам потрібна.</p>
+
+                <hr>
+
+                <h3>Наші цінності</h3>
+                <ul>
+                    <li><b>Любов до читання</b> — ми об'єднуємо людей, для яких книжки є джерелом розвитку й натхнення.</li>
+                    <li><b>Доступність знань</b> — електронні та аудіоформати дозволяють читати й слухати книги там, де зручно саме вам.</li>
+                    <li><b>Якість добірок</b> — ми ретельно відбираємо видання, щоб у каталозі були перевірені, цікаві та корисні книги.</li>
+                </ul>
+
+                <hr>
+
+                <h3>Чому варто обрати <strong>LibHub</strong></h3>
+                <ul>
+                    <li><b>Зручний каталог</b>: тематичні розділи, фільтри, пошук за автором, жанром та серією.</li>
+                    <li><b>Різні формати</b>: електронні книги, аудіокниги та інформація про друковані примірники у фонді.</li>
+                    <li><b>Персональні списки</b>: створюйте власний список читання, додавайте книги в обране.</li>
+                    <li><b>Рецензії та оцінки</b>: діліться враженнями та читайте відгуки інших читачів.</li>
+                </ul>
+
+                <hr>
+
+                <h3>Як почати користуватися бібліотекою</h3>
+                <ol>
+                    <li>Зареєструйте особистий кабінет читача на сайті LibHub.</li>
+                    <li>Перегляньте каталог книг і скористайтеся пошуком або фільтрами за жанрами та темами.</li>
+                    <li>Додайте вибрані видання до списку читання або відкрийте їх у форматі онлайн-перегляду.</li>
+                    <li>Для друкованих книг — забронюйте примірник і дотримуйтесь інструкцій щодо отримання у партнерських бібліотеках.</li>
+                </ol>
+
+                <hr>
+
+                <h3>Формати доступу</h3>
+                <ul>
+                    <li>Читання електронних книг онлайн у браузері.</li>
+                    <li>Завантаження у форматах ePub / PDF (за наявності).</li>
+                    <li>Прослуховування аудіокниг безпосередньо на сайті.</li>
+                    <li>Інформація про наявність друкованих примірників у партнерських бібліотеках.</li>
+                </ul>
+
+                <p>Частина контенту доступна безкоштовно, інша — за передплатою або в рамках бібліотечних програм. Ми прагнемо зробити якісну літературу максимально доступною для кожного.</p>
+
+                <h3><strong>LibHub</strong> — ваша особиста бібліотека в один клік</h3>
+                <p>З <strong>LibHub</strong> ви завжди маєте під рукою книги для навчання, роботи та відпочинку. Читайте, слухайте, відкривайте нові історії й знання тоді, коли вам зручно!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>LibHub</h2>
+                <p>Онлайн-бібліотека для тих, хто любить читати. Тут ви знайдете художню, наукову, навчальну літературу, а також аудіокниги та подкасти.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Корисні посилання</h3>
+                <ul>
+                    <li><a href="#">Про бібліотеку</a></li>
+                    <li><a href="#">Як стати читачем</a></li>
+                    <li><a href="#">Правила користування</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contacts">
+                <h3>Контакти</h3>
+                <p><b>Телефон:</b> +38 (050) 123-45-67</p>
+                <p><b>Email:</b> support@libhub.ua</p>
+                <p><b>Адреса:</b> м. Київ, вул. Книжкова, 10</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Ми у соцмережах</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 LibHub. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="JS/carousel.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

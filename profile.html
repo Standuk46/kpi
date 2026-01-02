@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій профіль — LibHub</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <nav class="nav">
+                <div>
+                    <a class="logo" href="index.html">LIBHUB</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="div-a" href="stores.html">Каталог</a></li>
+                    <li><a class="div-a" href="delivery.html">Читачам</a></li>
+                    <li><a class="div-a" href="returns.html">Правила</a></li>
+                    <li><a class="div-a" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-bottom">
+                <div class="catalog-wrapper">
+                    <button class="catalog-btn" id="catalogToggle">Каталог книг</button>
+                    </div>
+
+                <input class="search-bar" type="text" placeholder="Пошук книги, автора...">
+
+                <ul class="user-menu">
+                    <li><a class="lastdiv-a" href="#"><i class="fas fa-heart"></i><span>Обране</span></a></li>
+                    <li><a class="lastdiv-a" href="#"><i class="fas fa-book"></i><span>Список читання</span></a></li>
+                    <li><a class="lastdiv-a active" href="profile.html"><i class="fas fa-user"></i><span>Кабінет</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-section">
+            <h1 class="page-title">Особистий кабінет читача</h1>
+            
+            <div class="cabinet-layout">
+                <nav class="cabinet-nav">
+                    <ul>
+                        <li class="active">
+                            <a href="#"><i class="fas fa-id-card"></i> Мій профіль</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-history"></i> Історія читання</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-bookmark"></i> Заброньовані книги</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-heart"></i> Список бажаного</a>
+                        </li>
+                        <li class="separator"></li>
+                        <li id="admin-panel-link" style="display:none;">
+                            <a href="admin.html" class="admin-link">
+                                <i class="fas fa-shield-alt"></i> Панель бібліотекаря
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="logout-link" class="logout-link"><i class="fas fa-sign-out-alt"></i> Вийти</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="cabinet-content">
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <h2>Дані читача</h2>
+                            <button class="edit-icon-btn" id="profile-edit-trigger" title="Редагувати">
+                                <i class="fas fa-pen"></i>
+                            </button>
+                        </div>
+
+                        <div class="profile-grid" id="profile-view">
+                            <div class="detail-item">
+                                <label>Ім'я та прізвище</label>
+                                <span class="value main-value" id="profile-full-name">—</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Телефон</label>
+                                <span class="value" id="profile-phone">—</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Email</label>
+                                <span class="value" id="profile-email">—</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Номер читацького квитка</label>
+                                <span class="value code-value" id="profile-id">#LH-0000</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Дата реєстрації</label>
+                                <span class="value" id="profile-created-at">—</span>
+                            </div>
+                        </div>
+
+                        <form class="profile-grid edit-mode" id="profile-edit-form" style="display:none;">
+                            <div class="input-group">
+                                <label for="edit-first-name">Ім'я</label>
+                                <input type="text" id="edit-first-name" class="lib-input">
+                            </div>
+                            <div class="input-group">
+                                <label for="edit-last-name">Прізвище</label>
+                                <input type="text" id="edit-last-name" class="lib-input">
+                            </div>
+                            <div class="input-group">
+                                <label for="edit-phone">Телефон</label>
+                                <input type="text" id="edit-phone" class="lib-input" placeholder="+38 (0__) ___-__-__">
+                            </div>
+                            <div class="input-group">
+                                <label for="edit-email">Email</label>
+                                <input type="email" id="edit-email" class="lib-input">
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn-secondary" id="profile-cancel-btn">Скасувати</button>
+                                <button type="submit" class="btn-primary" id="profile-save-btn">Зберегти зміни</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>LibHub</h2>
+                <p>Онлайн-бібліотека для тих, хто любить читати. Тут ви знайдете художню, наукову, навчальну літературу, а також аудіокниги та подкасти.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Корисні посилання</h3>
+                <ul>
+                    <li><a href="#">Про бібліотеку</a></li>
+                    <li><a href="#">Як стати читачем</a></li>
+                    <li><a href="#">Правила користування</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <h3>Контакти</h3>
+                <p><b>Телефон:</b> +38 (050) 123-45-67</p>
+                <p><b>Email:</b> support@libhub.ua</p>
+                <p><b>Адреса:</b> м. Київ, вул. Книжкова, 10</p>
+            </div>
+            <div class="footer-social">
+                <h3>Ми у соцмережах</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 LibHub. Усі права захищені.</p>
+        </div>
+    </footer>
+    
+    <script src="JS/profile.js"></script>
+</body>
+</html>
